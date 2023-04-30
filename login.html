@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+
+</head>
+<style>
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(rgba(49, 49, 32, 0.52),rgba(49, 49, 32, 0.52)), url(./images/img3.jpg) ;
+    background-size: cover;
+    height: 110vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    
+}
+    .container{
+        height: 500px;
+        width: 200px;
+   
+       margin: auto auto auto auto;
+       text-align: center;
+       
+    }
+    .logo{
+        text-align: center;
+        
+    }
+    .container2{
+        margin-top:70px ;
+        border-radius: 18px 0px 18px 0px;
+        position: relative;
+        text-align: center;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        background-color: rgba(169, 169, 169, 0.562);
+        color: rgba(166, 223, 110, 0.822);
+
+
+    }
+    .container2 input{
+        border-radius: 6px;
+        width: 200px;
+        border: none;
+        height: 25px;
+    }
+    .container2 button{
+        margin-top: 20px;
+        
+    }
+    .container p{
+        font-size: 25px;
+        margin-top: 15px;
+    }
+  #so{
+    font-size: 25px;
+    margin-top: 20px;
+    padding: 0px 6px;
+
+  }
+  
+        </style>
+
+<body>
+
+    <div class="container">
+        <img class="logo" src="./images/pngwing.com.png" alt=""  height="150px" width="150px">
+           
+   <div class="container2">
+    <label for="name" >First Name</label>
+    <input type="text" id="name">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" maxlength="6">
+
+    <label for="fname">Father Name</label>
+    <input type="text" id="fname" >
+
+    <label for="cnic">CNIC:</label>
+    <input type="number" id="cnic" placeholder="eg-42101-1234567-7"  >
+
+    <label for="pnumber">Phone #</label>
+    <input type="number" id="pnumber">
+
+<label for="weight">Enter your weight</label>
+<select id="weight">
+
+    <option value="45kg-50kg">45kg-55kg</option>
+    <option value="56kg-65kg">56kg-65kg</option>
+    <option value="66kg-75kg">66kg-75kg</option>
+    <option value="76kg-85kg">76kg-85kg</option>
+    <option value="86kg-95kg">86kg-95kg</option>
+    
+</select><br>
+
+<label for="date"> Date of birth</label>
+<input type="date" id="date">
+
+
+<button>submit</button>
+
+   </div>
+   
+   <P>CONTACT US</P>
+   <a href="" id="so"><i class="fa-brands fa-facebook"></i></a>
+  <a href="" id="so"><i class="fa-brands fa-square-whatsapp"></i></a>
+  <a href="" id="so"><i class="fa-brands fa-twitter"></i></a>
+  <a href="" id="so"><i class="fa-brands fa-youtube"></i></a> 
+
+    </div>
+    
+</body>
+</html>
