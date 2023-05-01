@@ -352,5 +352,41 @@ font-family: var(--font-btn);
 }
 
 
+@media(max-width:365px){
+
+
+     .container {
+        display: grid;
+        grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: max-content max-content max-content max-content  max-content;
+        grid-template-areas: "bar header header header header header header header header "
+        "bar aside  aside aside aside aside aside aside aside"
+            "bar  service service service service service service service service"
+            "footerlogo footerlogo footerlogo footerlogo footerlogo footerlogo footerlogo footerlogo footerlogo"
+            "gal gal gal gal gal gal gal gal gal";
+            
+    }  
+    .header{
+        grid-area: header;
+    background-image:
+        linear-gradient(rgba(241, 241, 234, 0.52), rgba(80, 85, 66, 0.73)),
+        url('./images/istockphoto-1286351499-1024x1024.jpg');
+        
+
+    /* object-fit: cover; */
+     background-size: 100% 100%;
+
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "logo logo logo"
+        " . . ."
+        ". slg slg"
+        ". js js"
+        "ft ft ft";
+}
+
+    }
+    
 
 
