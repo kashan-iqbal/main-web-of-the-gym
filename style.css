@@ -61,7 +61,8 @@ body{
         linear-gradient(rgba(241, 241, 234, 0.52), rgba(80, 85, 66, 0.73)),
         url('./images/istockphoto-1286351499-1024x1024.jpg');
     object-fit: cover;
-    background-size: cover;
+    /* background-size: cover; */
+    background-size: 100% 100%;
     display: grid;
     grid-template-columns: 0.5fr 3fr 2fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -360,8 +361,8 @@ font-family: var(--font-btn);
         grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: max-content max-content max-content max-content  max-content;
         grid-template-areas: "bar header header header header header header header header "
-        "bar aside  aside aside aside aside aside aside aside"
-            "bar  service service service service service service service service"
+        "aside aside  aside aside aside aside aside aside aside"
+            "service  service service service service service service service service"
             "footerlogo footerlogo footerlogo footerlogo footerlogo footerlogo footerlogo footerlogo footerlogo"
             "gal gal gal gal gal gal gal gal gal";
             
@@ -384,6 +385,35 @@ font-family: var(--font-btn);
         ". slg slg"
         ". js js"
         "ft ft ft";
+}
+.service {
+    grid-area: service;
+    display: grid;
+    padding: 30px auto;
+    margin: 40px auto;
+     row-gap: 12px ;
+     column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: " s1 s2 s3"
+    "s4 s5 s6"
+    "s7 s8 s9";
+    background-color: darkgrey;
+    border-radius: 10px;
+    
+}
+.aside h2 {
+    grid-area: hd;
+    text-transform: uppercase;
+    margin: auto auto;
+    font-size: 250%;
+    text-decoration: underline;
+    font-family: var(--font-heading);
+   
+}
+.info{
+    font-size: 250%;
+    margin: auto auto auto 0px ;
 }
 
     }

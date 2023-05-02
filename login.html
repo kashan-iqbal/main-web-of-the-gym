@@ -75,27 +75,27 @@ body{
 
 <body>
 
-    <div class="container">
+    <form class="container" method="post" action="https://script.google.com/macros/s/AKfycbwgl6ohhGybXXcdQIxpL5j7J2mgdCJQ30K85R5X-VqUyLmr_-BjKGVhQJOZMLm7sw89oA/exec">
         <img class="logo" src="./images/pngwing.com.png" alt=""  height="150px" width="150px">
            
    <div class="container2">
     <label for="name" >First Name</label>
-    <input type="text" id="name">
+    <input type="text" id="name" name="name">
 
     <label for="lname">Last Name</label>
-    <input type="text" id="lname" maxlength="6">
+    <input type="text" id="lname" name="lastname" maxlength="6">
 
     <label for="fname">Father Name</label>
-    <input type="text" id="fname" >
+    <input type="text" id="fname" name="fathername" >
 
     <label for="cnic">CNIC:</label>
-    <input type="number" id="cnic" placeholder="eg-42101-1234567-7"  >
+    <input  type="text" id="cnic" name="cnic" placeholder="eg-42101-1234567-7"  >
 
     <label for="pnumber">Phone #</label>
-    <input type="number" id="pnumber">
+    <input type="number" id="pnumber" name="phonenumber">
 
 <label for="weight">Enter your weight</label>
-<select id="weight">
+<select id="weight" name="weight">
 
     <option value="45kg-50kg">45kg-55kg</option>
     <option value="56kg-65kg">56kg-65kg</option>
@@ -106,10 +106,11 @@ body{
 </select><br>
 
 <label for="date"> Date of birth</label>
-<input type="date" id="date">
+<input type="date" id="date" name="dob">
 
+<input type="submit" id="submit" value="submit form">
 
-<button>submit</button>
+<!-- <button>submit</button> -->
 
    </div>
    
@@ -119,7 +120,7 @@ body{
   <a href="" id="so"><i class="fa-brands fa-twitter"></i></a>
   <a href="" id="so"><i class="fa-brands fa-youtube"></i></a> 
 
-    </div>
+</form>
     
 </body>
 </html>
